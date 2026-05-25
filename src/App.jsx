@@ -123,7 +123,7 @@ function App() {
         
         <div className="flex flex-col items-center text-center">
           <img
-            src="/assets/tech/powerapps.png"
+            src={`${import.meta.env.BASE_URL}assets/tech/powerapps.png`}
             alt="Power Platform"
             className="w-16 h-16 object-contain mb-4"
           />
@@ -145,7 +145,7 @@ function App() {
 
         <div className="flex flex-col items-center text-center">
           <img
-            src="/assets/tech/Sharepoint_logo.png"
+            src={`${import.meta.env.BASE_URL}assets/tech/Sharepoint_logo.png`}
             alt="SharePoint"
             className="w-16 h-16 object-contain mb-4"
           />
@@ -167,7 +167,7 @@ function App() {
 
         <div className="flex flex-col items-center text-center">
           <img
-            src="/assets/tech/automate.png"
+            src={`${import.meta.env.BASE_URL}assets/tech/automate.png`}
             alt="Workflows"
             className="w-16 h-16 object-contain mb-4"
           />
@@ -279,49 +279,49 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
             {[
-              {
-                title: "ArcGIS + Power Platform Integration",
-                img: "/assets/tech/ArcGISS123PP.png"
-              },
-              {
-                title: "Workflow Automation Systems",
-                img: "/assets/tech/WorkflowAutomation.png"
-              },
-              {
-                title: "Dynamic Date Picker Validation Component",
-                img: "/assets/tech/DatePicker.png"
-              },
-              {
-                title: "Freshservice + Power Platform + AI Ticket Categorization",
-                img: "/assets/tech/fs_pp_ai.png"
-              },
-              {
-                title: "SharePoint Migration & Collaboration Systems",
-                img: "/assets/tech/SharepointSiteMigration.png"
-              },
-              {
-                title: "Enterprise Workflow Testing & QA Validation",
-                img: "/assets/tech/qa_logo.png"
-              }
-            ].map((project, i) => (
-              <div 
-                key={i} 
-                className="glass rounded-3xl p-6 hover:glow-emerald group h-full overflow-hidden transition-all duration-300 hover:scale-[1.02]"
-              >
-                <div className="relative h-56 mb-6 rounded-2xl overflow-hidden border border-emerald-500/20 group-hover:border-emerald-400 transition-all">
-                  <img 
-                    src={project.img} 
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                </div>
+  {
+    title: "ArcGIS + Power Platform Integration",
+    img: `${import.meta.env.BASE_URL}assets/tech/ArcGISS123PP.png`
+  },
+  {
+    title: "Workflow Automation Systems",
+    img: `${import.meta.env.BASE_URL}assets/tech/WorkflowAutomation.png`
+  },
+  {
+    title: "Dynamic Date Picker Validation Component",
+    img: `${import.meta.env.BASE_URL}assets/tech/DatePicker.png`
+  },
+  {
+    title: "Freshservice + Power Platform + AI Ticket Categorization",
+    img: `${import.meta.env.BASE_URL}assets/tech/fs_pp_ai.png`
+  },
+  {
+    title: "SharePoint Migration & Collaboration Systems",
+    img: `${import.meta.env.BASE_URL}assets/tech/SharepointSiteMigration.png`
+  },
+  {
+    title: "Enterprise Workflow Testing & QA Validation",
+    img: `${import.meta.env.BASE_URL}assets/tech/qa_logo.png`
+  }
+].map((project, i) => (
+  <div 
+    key={i} 
+    className="glass rounded-3xl p-6 hover:glow-emerald group h-full overflow-hidden transition-all duration-300 hover:scale-[1.02]"
+  >
+    <div className="relative h-56 mb-6 rounded-2xl overflow-hidden border border-emerald-500/20 group-hover:border-emerald-400 transition-all">
+      <img 
+        src={project.img} 
+        alt={project.title}
+        className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+    </div>
 
-                <h3 className="text-xl font-semibold leading-tight text-white group-hover:text-emerald-300 transition-colors">
-                  {project.title}
-                </h3>
-              </div>
-            ))}
+    <h3 className="text-xl font-semibold leading-tight text-white group-hover:text-emerald-300 transition-colors">
+      {project.title}
+    </h3>
+  </div>
+))}
           </div>
         </div>
       </section>
@@ -360,7 +360,7 @@ function App() {
             ].map((tech, i) => (
               <div key={i} className="tech-card bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 flex flex-col items-center justify-center hover:glow-cyan group hover:bg-white/20 hover:border-[#3EB489]/50 transition-all">
                 <img 
-                  src={`/assets/tech/${tech.img}`} 
+                  src={`${import.meta.env.BASE_URL}assets/tech/${tech.img}`} 
                   alt={tech.name} 
                   className="w-14 h-14 mx-auto mb-4 object-contain group-hover:scale-110 transition-transform" 
                 />

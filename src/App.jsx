@@ -338,7 +338,7 @@ function App() {
             {[
               {name: "Power Apps", img: "powerapps.png"},
               {name: "Power Automate", img: "automate.png"},
-              {name: "Dataverse", img: "dataverse.png"},
+              {name: "Dataverse", img: "Dataverse.png"},
               {name: "SharePoint", img: "Sharepoint_logo.png"},
               {name: "AI Builder", img: "aibuilder.png"},
               {name: "Freshservice", img: "fs.svg"},

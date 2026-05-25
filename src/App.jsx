@@ -123,7 +123,7 @@ function App() {
         
         <div className="flex flex-col items-center text-center">
           <img
-            src="/src/assets/tech/powerapps.png"
+            src={`${import.meta.env.BASE_URL}assets/tech/powerapps.png`}
             alt="Power Platform"
             className="w-16 h-16 object-contain mb-4"
           />

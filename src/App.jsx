@@ -123,7 +123,7 @@ function App() {
         
         <div className="flex flex-col items-center text-center">
           <img
-            src={`${import.meta.env.BASE_URL}assets/tech/powerapps.png`}
+            src="/assets/tech/powerapps.png"
             alt="Power Platform"
             className="w-16 h-16 object-contain mb-4"
           />
@@ -145,7 +145,7 @@ function App() {
 
         <div className="flex flex-col items-center text-center">
           <img
-            src="/src/assets/tech/Sharepoint_logo.png"
+            src="/assets/tech/Sharepoint_logo.png"
             alt="SharePoint"
             className="w-16 h-16 object-contain mb-4"
           />
@@ -167,7 +167,7 @@ function App() {
 
         <div className="flex flex-col items-center text-center">
           <img
-            src="/src/assets/tech/automate.png"
+            src="/assets/tech/automate.png"
             alt="Workflows"
             className="w-16 h-16 object-contain mb-4"
           />
@@ -281,27 +281,27 @@ function App() {
             {[
               {
                 title: "ArcGIS + Power Platform Integration",
-                img: "/src/assets/tech/ArcGISS123PP.png"
+                img: "/assets/tech/ArcGISS123PP.png"
               },
               {
                 title: "Workflow Automation Systems",
-                img: "/src/assets/tech/WorkflowAutomation.png"
+                img: "/assets/tech/WorkflowAutomation.png"
               },
               {
                 title: "Dynamic Date Picker Validation Component",
-                img: "/src/assets/tech/DatePicker.png"
+                img: "/assets/tech/DatePicker.png"
               },
               {
                 title: "Freshservice + Power Platform + AI Ticket Categorization",
-                img: "/src/assets/tech/fs_pp_ai.png"
+                img: "/assets/tech/fs_pp_ai.png"
               },
               {
                 title: "SharePoint Migration & Collaboration Systems",
-                img: "/src/assets/tech/SharepointSiteMigration.png"
+                img: "/assets/tech/SharepointSiteMigration.png"
               },
               {
                 title: "Enterprise Workflow Testing & QA Validation",
-                img: "/src/assets/tech/qa_logo.png"
+                img: "/assets/tech/qa_logo.png"
               }
             ].map((project, i) => (
               <div 
@@ -360,7 +360,7 @@ function App() {
             ].map((tech, i) => (
               <div key={i} className="tech-card bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 flex flex-col items-center justify-center hover:glow-cyan group hover:bg-white/20 hover:border-[#3EB489]/50 transition-all">
                 <img 
-                  src={`/src/assets/tech/${tech.img}`} 
+                  src={`/assets/tech/${tech.img}`} 
                   alt={tech.name} 
                   className="w-14 h-14 mx-auto mb-4 object-contain group-hover:scale-110 transition-transform" 
                 />

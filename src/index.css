@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --cyan: #22D3EE;
+  --emerald: #3EB489;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.glass {
+  background: rgba(18, 61, 50, 0.55);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(34, 211, 238, 0.15);
+}
+
+.glow-cyan { box-shadow: 0 0 25px -5px rgb(34 211 238), 0 0 10px -5px rgb(34 211 238); }
+.glow-emerald { box-shadow: 0 0 25px -5px rgb(62 180 137), 0 0 10px -5px rgb(62 180 137); }
+
+.marquee {
+  animation: marquee 35s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.tech-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/tech/T-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thirumalaivasan Nedunchezhian - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Dynamic Tab Title Script -->
+    <script>
+      let originalTitle = "Thirumalaivasan Nedunchezhian - Portfolio";
+      let timeoutId = null;
+
+      function handleVisibilityChange() {
+        if (document.hidden) {
+          document.title = "👁️ Where did you go?";
+          
+          timeoutId = setTimeout(() => {
+            document.title = "👁️ Still thinking about my portfolio?";
+          }, 8000);
+        } else {
+          clearTimeout(timeoutId);
+          document.title = originalTitle;
+        }
+      }
+
+      document.addEventListener("visibilitychange", handleVisibilityChange);
+    </script>
+  </head>
+  <body class="bg-[#041C18] text-[#F1FFF8]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
